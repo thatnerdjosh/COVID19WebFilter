@@ -28,7 +28,7 @@ Submit an issue or feature request on this repository or contact the maintainers
 
 ## Maintainers
 
-- [NerdsvilleCEo](https://github.com/NerdsvilleCEO)
+- [Josh Santos](https://github.com/NerdsvilleCEO)
 
 ## Contributing
 TBD
