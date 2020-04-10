@@ -8,4 +8,5 @@ app.set("scheme", process.env.SECURE || false ? "https" : "http")
 app.set("host", process.env.HOST || "localhost")
 app.get("/search", searchController.index);
 
+
 export default app
