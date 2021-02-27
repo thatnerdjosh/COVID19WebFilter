@@ -11,3 +11,4 @@ export const index = (request: Request, response: Response) => {
     response.setHeader("Access-Control-Allow-Origin", "*")
     response.json({"data": cachedAreas }).end()
 };
+
