@@ -25,8 +25,6 @@ export function FetchAreas(): Promise<Area[]>{
     .catch(function (error) {
         return Promise.reject(error)
     })
-    .finally(function () {
-    });
 }
 
 export function FilterArea(areas: Area[], filter: string): Fuse.FuseResult<Area>[] {
@@ -45,7 +43,10 @@ function updateCachedAreas() {
 }
 
 export var cachedAreas:Area[]
-var minutes = 15, the_interval = minutes * 60 * 1000;
+
+// Cache 1h 
+var minutes = 60, the_interval = minutes * 60 * 1000;
+
 setInterval(function() {
     updateCachedAreas()
 }, the_interval);
